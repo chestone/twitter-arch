@@ -1,0 +1,29 @@
+{
+  "name": "twitter-arch",
+  "version": "1.0.0",
+  "description": "Simple service to archive tweets after one week.",
+  "main": "handler.js",
+  "repository": "git@github.com:chestone/twitter-arch.git",
+  "author": "Cheston Lee <chestonlloyd@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.15.x"
+  },
+  "scripts": {
+    "build": "serverless package",
+    "clean": "rm -rf .build",
+    "deploy": "serverless deploy",
+    "start": "serverless offline start"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "serverless-offline": "^5.10.1",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
