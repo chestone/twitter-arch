@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import { Handler, Context, Callback } from 'aws-lambda';
 
 interface HelloResponse {
